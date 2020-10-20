@@ -1,0 +1,94 @@
+.circle {
+    width: 62px;
+    height: 62px;
+    border-radius: 99em;
+    display: inline-block;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #808080;
+}
+
+.rounded-rectangle {
+    width: 62px;
+    height: 62px;
+    border-radius: 0;
+    display: inline-block;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #808080;
+
+}
+
+.i {
+    background-image: url("img/icon-list.png");
+}
+
+div {
+    width: 62px;
+    height: 62px;
+    background-image: url("img/icon-list.png");
+}
+
+.i-person {
+    background-position: -40px 1460px;
+}
+
+.i-phone {
+    background-position: -155px 1460px;
+}
+
+.i-message {
+    background-position: -277px 1460px;
+}
+
+.i-clock {
+    background-position: -395px 1460px;
+}
+
+.i-music {
+    background-position: -40px 840px;
+}
+
+.i-photo {
+    background-position: -155px 840px;
+}
+
+.i-photocamera {
+    background-position: -277px 840px;
+}
+
+.i-videocamera {
+    background-position: -395px 840px;
+}
+
+.i-webcam {
+    background-position: -40px 220px;
+}
+
+.i-microphone {
+    background-position: -155px 220px;
+}
+
+.i-trashcan {
+    background-position: -277px 220px;
+}
+
+.i-find {
+    background-position: -395px 220px;
+}
+
+.i-location {
+    background-position: -40px 103px;
+}
+
+.i-setting {
+    background-position: -155px 103px;
+}
+
+.i-speaker {
+    background-position: -277px 103px;
+}
+
+.i-note {
+    background-position: -395px 103px;
+}
