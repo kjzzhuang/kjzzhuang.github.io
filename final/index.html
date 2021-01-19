@@ -1,0 +1,150 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+ 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>台大拉霸</title>
+    
+    <style>
+        body {
+            
+            padding: 20px;
+            background-color:#52af71;;
+            font-size:14px; 
+            font-family:"sans-serif";
+        }
+      
+
+        .bd {
+            text-align: center;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 554px;
+        }
+
+        .slot-wrapper {
+            display: flex;
+            border: 1px solid #000000;
+        }
+
+        .slot {
+            background: url("./images/Combine_clear.png") repeat-y;
+            background-size: cover;
+            width: 275px;
+            height: 275px;
+            float: left;
+            border: 1px solid #000;
+            background-position: 0 4px;
+        }
+
+        .motion {
+            background: url("./images/Combine_blur.png") repeat-y;
+            background-size: cover;
+        }
+
+        button {
+            width: 138px;
+            height: 33px;
+            margin: 20px 60px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: bold;
+            height: 22px;
+        }
+
+        .credits {
+            font-size: 15px;
+            margin-top: 20px;
+        }
+
+        .credits .browsers {
+            font-style: italic;
+            font-size: 14px;
+            color: #777;
+            margin-top: 4px;
+        }
+
+        .clear {
+            clear: both;
+        }
+        .buttons{
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            
+        }
+        #start{
+            height: 100px;
+            width: 100px;
+            background: url("./images/Start.png");
+            background-size: cover;
+            cursor: pointer;
+        }
+        #stop{
+            height: 100px;
+            width: 100px;
+            background: url("./images/Stop.png");
+            background-size: cover;
+            cursor: pointer;
+        }
+        #player_name{
+            width: 100%;
+            font-weight: bold;}
+        .colorr{ background-color:#BEEDC7 ;
+            border-radius:10px;
+        }
+     
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="jquery.spritely.js"></script>
+    <script src="jquery.backgroundPosition.js"></script>
+    <script src="slot.js"></script>
+
+</head>
+
+<body>
+  
+
+    <div class="colorr">
+    <center>
+        <div class="hello">
+        <h1 id="player_name"></h1>
+        <h3 id="instruction">
+            此為合太拉霸，若能拉出相同的人物，便能得到對應的回應。
+            </h3>
+         </div>
+        <h3 id="empty"></h3>
+        <button onclick="HideShow()">說明</button>
+        <button onclick="Delete()">我不想看說明</button>
+        <button onclick="Introo()">人物介紹</button>
+    </center>
+    
+    <div class="bd">
+        <div class="container">
+            <div class="slot-wrapper">
+                <div id="slot1" class="slot"></div>
+                <div id="slot2" class="slot"></div>
+                <div class="clear"></div>
+            </div>
+            <div id="result"></div>
+            <div class="buttons">
+                <div id="start"></div>
+                <div id="stop"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+</body>
+</html>
